@@ -1,0 +1,40 @@
+﻿<Window x:Class="BingoR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BingoR"
+        mc:Ignorable="d"
+        Title="Bingo" Height="350" Width="250">
+    <Canvas>
+
+        <Label Content="Válassz játékost!" 
+               Canvas.Top="5" 
+               Canvas.Left="5"></Label>
+
+        <ComboBox x:Name="cbxJatekos"
+                  Canvas.Top="30"
+                  Canvas.Left="30"
+                  Width="150" SelectionChanged="cbxJatekos_SelectionChanged"></ComboBox>
+        <Canvas x:Name="cTarto"
+                Height="150"
+                Width="150"
+                Canvas.Top="80"
+                Canvas.Left="45">
+            
+            
+        </Canvas>
+        <TextBox x:Name="txbNyeroSzamok"
+         Canvas.Bottom="65"
+         Canvas.Left="25"
+         Height="23"
+         Width="200"></TextBox>
+
+        <Button x:Name="btnHuzas"
+        Content="Húzás"
+        Height="23"
+        Width="150"
+        Canvas.Bottom="40"
+        Canvas.Left="30" Click="btnHuzas_Click"></Button>
+    </Canvas>
+</Window>
